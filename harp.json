@@ -1,0 +1,46 @@
+{
+  "globals": {
+    "name": "Chintan Raiyani",
+    "title": "Blog Chintan",
+    "url": "https://github.com/vedraiyani/hb-simurai",
+    "description": "This is a blog site.",
+    "authors": {
+      "chintan": {
+        "name": "Chintan Raiyani",
+        "email": "vedraiyani@gmail.com",
+        "bio": "UIX Designer and CSS Doodler",
+        "linkedin": "https://www.linkedin.com/in/chintanraiyani/",
+        "twitter": "https://twitter.com/vedraiyani",
+        "github": "https://github.com/vedraiyani",
+        "dribbble": "simurai",
+        "tlkio": "simurai",
+        "codepen": "simurai"
+      },
+      "simurai": {
+        "name": "Simurai",
+        "email": "sim@simurai.com",
+        "bio": "UIX Designer and CSS Doodler",
+        "twitter": "simurai",
+        "github": "simurai",
+        "dribbble": "simurai",
+        "tlkio": "simurai",
+        "codepen": "simurai"
+      },
+      "kennethormandy": {
+        "name": "Kenneth Ormandy",
+        "email": "kenneth@chloi.io",
+        "bio": "Designer at Chloi Inc.",
+        "twitter": "kennethormandy",
+        "github": "kennethormandy",
+        "dribbble": "kennethormandy",
+        "rdio": "kennethormandy"
+      }
+    },
+    "service": {
+      "analytics": "UA-XXXXXX-1",
+      "service": "example",
+      "prism": true
+    }
+  },
+  "domains": []
+}
