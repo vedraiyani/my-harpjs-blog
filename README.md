@@ -21,7 +21,8 @@ Now, use this boilerplate to create a new Harp app:
 
 ```bash
 harp init --boilerplate kennethormandy/hb-simurai
-harp server
+# harp server
+harp .
 # Visit http://localhost:9000
 ```
 

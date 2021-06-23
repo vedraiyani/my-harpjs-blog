@@ -3,23 +3,28 @@
   else return content.split("<p>")[1].split("</p>")[0];
 } %>
 
-<ul class="index">
+ <!-- Posts Section -->
+<section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
   <% for(var slug in public.blog._data){ %>
     <% var post = public.blog._data[slug] %>
     <% if(post.title && post.published!==false) { %>
-      <li class="index-item">
-        <a class="index-link" href="blog/<%= slug %>">
-          <h2 class="index-title">
-            <%= post.title %>
-          </h2>
-          <% if(post.author) { %>
-            <a href="http://twitter.com/<%= authors[post.author].twitter %>"><%= authors[post.author].name %></a>
-          <% } %>
-          <time class="time time--inline"> on <%= post.date %></time>
+      
+      <article class="flex flex-col shadow my-4">
+        <!-- Article Image -->
+        <a href="#" class="hover:opacity-75">
+            <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1">
         </a>
-        <p><%- excerpt(partial("blog/" + slug)) %></p>
-        <a class="index-more" href="">•••</a>
-      </li>
+        <div class="bg-white flex flex-col justify-start p-6">
+            <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a>
+            <a href="blog/<%= slug %>" class="text-3xl font-bold hover:text-gray-700 pb-4"><%= post.title %></a>
+            <p href="#" class="text-sm pb-3">
+                By <a href="<%= authors[post.author].twitter %>" class="font-semibold hover:text-gray-800"><%= authors[post.author].name %></a>, Published on <%= post.date %>
+            </p>
+            <a href="blog/<%= slug %>" class="pb-6"><%- excerpt(partial("blog/" + slug)) %>•••</a>
+            <a href="blog/<%= slug %>" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
     <% } %>
   <% } %>
-</ul>
+</section>

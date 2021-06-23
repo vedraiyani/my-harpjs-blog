@@ -13,7 +13,7 @@
           <%- yield %>
       </article>
 
-      <% include ../_includes/comments %>
+      <%- include('../_includes/comments'); %>
 
   </main>
 
@@ -25,6 +25,6 @@
 
 <% } else { %>
 
-  <% include ../404 %>
+  <%- include('../404'); %>
 
 <% } %>
